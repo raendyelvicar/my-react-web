@@ -86,11 +86,11 @@
 	.contact .contact__box {
 		width: 100%;
 		padding: 20px;
-		margin: 10px;
+		margin: 0;
 	}
 
 	.contact .contact__box .box {
-		height: 120px;
+		height: 12em;
 	}
 
 	.contact .form__contact .row,
@@ -124,11 +124,11 @@
 	.contact .contact__box {
 		width: 100%;
 		padding: 1em;
-		margin: 0.75em;
+		margin: 0;
 	}
 
 	.contact .contact__box .box {
-		height: 10em;
+		height: 12em;
 	}
 
 	.contact .form__contact .row,
@@ -166,7 +166,7 @@
 	}
 
 	.contact .contact__box .box {
-		height: 10em;
+		height: 12em;
 	}
 
 	.contact .form__contact .row,

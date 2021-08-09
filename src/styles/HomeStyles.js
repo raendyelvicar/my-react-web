@@ -41,32 +41,33 @@ export const Box = styled.div`
 
 export const Heading = styled.h2`
 	color: ${(props) => props.color};
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-
+	font-size: 32px;
+	margin-bottom: 10px;
 	@media (min-width: 1024px) {
-		font-size: 3rem;
+		font-size: 30px;
 	}
-`;
-
-export const SubHeading = styled.h4`
-	font-size: 2em;
+	
+	`;
+	
+	export const SubHeading = styled.h4`
+	font-size: 20px;
 	color: #333;
 	font-weight: 300;
+	margin-bottom: 10px;
 
 	@media (min-width: 1024px) {
-		font-size: 1.5rem;
+		font-size: 18px;
 	}
 `;
 
 export const BoxText = styled.p`
 	margin-top: ${px2vw(20)};
 	color: #666;
-	font-size: 1.5rem;
+	font-size: 14px;
 	text-align: justify;
 	margin-bottom: 20px;
 
 	@media (min-width: 1024px) {
-		font-size: 1rem;
+		font-size: 16px;
 	}
 `;

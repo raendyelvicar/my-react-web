@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import { Card, CardContent, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { BoxText } from "../../styles/HomeStyles";
 
 const IMAGE_FILE = [
 	{
@@ -74,7 +75,7 @@ const StackCard = () => {
 					alt={item.title}
 				/>
 				<CardContent>
-					<Typography className={classes.title}>{item.title}</Typography>
+					<BoxText className={classes.title}>{item.title}</BoxText>
 				</CardContent>
 			</Card>
 		</SwiperSlide>
@@ -87,8 +88,11 @@ const StackCard = () => {
 				onSlideChange={() => console.log("slide change")}
 				onSwiper={(swiper) => console.log(swiper)}
 				breakpoints={{
-					324: {
-						slidesPerView: 3,
+					320: {
+						slidesPerView: 1,
+					},
+					425: {
+						slidesPerView: 2,
 					},
 					// when window width is >= 640px
 					640: {

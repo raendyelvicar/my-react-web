@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../../components/Button/Button";
-import { Heading } from "../../styles/HomeStyles";
+import { BoxText, Heading } from "../../styles/HomeStyles";
 import { IoIosMail, IoIosCall } from "react-icons/io";
 import "./Contact.css";
 
@@ -29,16 +29,16 @@ const Contact = () => {
 					<div className="contact__box">
 						<div className="row">
 							<div className="box col-50 col-md-100">
-								<p>
+								<BoxText>
 									<IoIosCall size="2em" />
 									+62 857 1902 5613
-								</p>
+								</BoxText>
 							</div>
 							<div className="box col-50 col-md-100">
-								<p>
+								<BoxText>
 									<IoIosMail size="2em" />
 									raendy.elvicar@gmail.com
-								</p>
+								</BoxText>
 							</div>
 						</div>
 					</div>

@@ -18,7 +18,7 @@ const Expertise = () => {
 	return (
 		<>
 			<Inner id="preferences">
-				<Heading color="#111">Preferences</Heading>
+				<Heading color="#111" style={{textAlign:"center"}}>Preferences</Heading>
 				<StackCard></StackCard>
 			</Inner>
 		</>

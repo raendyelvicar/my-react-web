@@ -9,6 +9,7 @@ const Inner = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: auto;
+	min-height:100vh;
 
 	@media (min-width: 1024px) {
 		z-index: 1;

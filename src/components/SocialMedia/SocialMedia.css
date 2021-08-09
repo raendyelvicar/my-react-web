@@ -16,7 +16,7 @@ li {
 }
 
 .icon__social-media .io-icon {
-	font-size: 2.5em;
+	font-size: 28px;
 	color: rgb(95, 95, 95);
 }
 
@@ -24,8 +24,9 @@ li {
 	color: rgb(169, 169, 169);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
 	.icon__social-media .io-icon {
-		font-size: 1.75em;
+		font-size: 20px;
 	}
 }
+

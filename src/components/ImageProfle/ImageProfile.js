@@ -7,10 +7,10 @@ const ImageSidebar = styled.div`
 	background-size: cover;
 	flex: 2;
 
-	@media screen and (min-width: 426px) and (max-width: 768px) {
+	@media screen and (min-width: 320px) and (max-width: 768px) {
 		display: block;
 		background-position: center;
-		height: 35%;
+		height: 30%;
 	}
 
 	@media screen and (min-width: 768.01px) and (max-width: 1024px) {
