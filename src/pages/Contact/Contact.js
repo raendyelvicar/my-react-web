@@ -16,6 +16,10 @@ const Inner = styled.div`
 	}
 `;
 
+const sendEmail = () =>{
+	alert("Silakan hubungi langsung melalui raendy.elvicar@gmail.com. Terima Kasih :)")
+}
+
 const Contact = () => {
 	return (
 		<>
@@ -40,8 +44,8 @@ const Contact = () => {
 					</div>
 
 					<div className="form__contact">
-						<form>
-							<div className="row" method="" action="">
+						<form onSubmit={sendEmail}>
+							<div className="row">
 								<div className="col-50 col-md-100">
 									<label for="Name"></label>
 									<input name="name" type="text" placeholder="Your Name" />
