@@ -1,0 +1,96 @@
+.toggle {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	top: 3%;
+	right: 3%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 50px;
+	cursor: pointer;
+	z-index: 1000;
+	background: white;
+}
+
+.toggle span:nth-child(1) {
+	display: block;
+	position: relative;
+	background-color: black;
+	height: 6px;
+	width: 35px;
+	margin-bottom: 5px;
+	border-radius: 50px;
+	transition: all 0.1s ease-in;
+	z-index: 1000;
+}
+.toggle span:nth-child(2) {
+	display: block;
+	position: relative;
+	background-color: black;
+	height: 6px;
+	width: 20px;
+	margin-top: 0;
+	border-radius: 50px;
+	transition: all 0.1s ease-in;
+	z-index: 1000;
+}
+
+.toggle.active {
+	transform: rotate(90deg);
+	background-color: #000;
+}
+
+.toggle.active > span:nth-child(1) {
+	transform: rotate(45deg);
+	top: 5px;
+	background-color: #fff;
+}
+
+.toggle.active > span:nth-child(2) {
+	width: 35px;
+	transform: rotate(-45deg);
+	top: -6px;
+	background-color: #fff;
+}
+
+.sidebar {
+	position: fixed;
+	background: #111;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	right: -100%;
+}
+
+.sidebar ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar ul li {
+	list-style: none;
+}
+
+.sidebar ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	margin: 10px 0;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.sidebar ul li a:hover {
+	color: #00bcd4;
+}
+
+.sidebar.active {
+	right: 0;
+}
